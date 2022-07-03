@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RMN Practica</title>
+	<link rel="icon" type="text/css" href="icono.png">
+</head>
+<body>
+<header>
+	<nav>
+		<ul>
+		<li><a href="index.html"><b>Inicio</b></a></li>
+		<li><a href="secuencias.html">Secuencias</a></li>
+		<li><a href="historia.html">Historia</a></li>
+		<li><a href="planificacion.html">Planificacion</a></li>
+		<li><a href="contacto.html">Contactanos</a></li>
+
+	</nav>
+</header>
+<h1><center><u>Bienvenido a la seccion secuencias</u></center></h1>
+<p>Primeramente debemos conocer algunos términos como el tiempo de adquisición (TA), el tiempo de eco (TE), el tiempo de repetición (TR) y el tiempo de inversión (TI).<br>
+<br>
+-Tiempo de adquisición (TA): es el tiempo necesario para obtener la imagen, desde que emitimos el primer pulso hasta que obtenemos la imagen final. Es el tiempo dedicado al estudio.<br>
+<br>
+-Tiempo de eco (TE): es el tiempo transcurrido entre el primer pulso enviado y la recogida de señal.<br>
+<br>
+
+-Tiempo de repetición (TR): es el tiempo que pasa entre un pulso de excitación y el siguiente, es decir, el tiempo que tardamos en volver a repetir el ciclo de la secuencia.<br>
+<br>
+-Tiempo de inversión (TI): es el tiempo que pasa desde que enviamos un pre-pulso hasta que lanzamos el pulso de excitación.</p>
+<br>
+
+<h1>SECUENCIAS DE PULSO</h1>
+Las secuencias más comunes son: Spin eco, eco gradiente e inversión-recuperación.
+
+<h2>Secuencias Spin-eco (SE)</h2>
+Es la secuencia más elemental, más conocida y probablemente la más utilizada en los estudios de resonancia magnética (RM). Esta secuencia comienza con un pulso de 90º que excita los núcleos de hidrógeno. Después de un tiempo T=TE/2, en el que los núcleos se relajan, enviamos un segundo pulso de 180º para refasar esos núcleos que se estaban relajando. Tras él, esperamos un nuevo T y recogemos la señal.
+
+Para obtener imágenes potenciadas en DP, utilizaremos un tiempo de eco (TE) corto y un tiempo de repetición (TR) largo. Para obtener imágenes potenciadas en T1, utilizaremos un tiempo de eco (TE) corto y un tiempo de repetición (TR) corto también.
+
+Para obtener imágenes potenciadas en T2, utilizaremos un tiempo de eco (TE) largo y un tiempo de repetición (TR) largo también.
+
+A veces, a partir de esta secuencia podemos tener secuencias multieco enviando varios pulsos refasadores de 180º en un mismo tiempo de repetición (TR).
+
+Este tipo de secuencias tiene como ventajas la buena calidad de las imágenes, la versatilidad de las mismas y la posibilidad de poder obtener una potenciación en T2 verdadera. Obtenemos imágenes más anatómicas.
+
+Como desventajas podemos decir que son unas secuencias un poco largas.
+
+<h2>Secuencias Eco-Gradiente (EG)</h2>
+Este tipo de secuencias son más rápidas que las SE ya que vamos a utilizar ángulos de inclinación de los vectores de magnetización menores de 90º, provocando una reducción visible del tiempo de adquisición (TA). Con ello conseguimos que se recupere la magnetización longitudinal más rápido.
+
+En estas secuencias no aplicamos un pulso de refase de 180º como en las secuencias SE porque queremos disminuir el tiempo de repetición (TR). Por ello, en su lugar aplicamos un gradiente de campo magnético, es decir, añadimos un campo magnético al campo magnético ya existente que se conecta durante un tiempo muy corto. Este gradiente que vamos a aplicar se denomina gradiente de desfase.
+
+Después de un pequeño tiempo, volvemos a enviar otro gradiente de campo magnético con la misma intensidad pero en dirección opuesta, que actúa como un pulso de 180º, aumentando la señal al máximo. A esta señal se le llama eco gradiente, y después del eco la señal volverá a disminuir. El gradiente utilizado será denominado gradiente de refase.
+
+Se utilizan para valorar el sistema músculo esquelético.
+
+Como ventajas de este tipo de secuencias tenemos su rapidez, que además nos permite la adquisición de imágenes en apnea, adquisición dinámica con contraste en fases cortas, y las angiografías en resonancia magnética (RM). Son imágenes con más resolución.
+
+Como desventajas tenemos una peor calidad de imágenes y la potenciación de imágenes en T2*. Son imágenes menos anatómicas.
+
+<h2>Secuencias Inversión-Recuperación (IR)</h2>
+Estas secuencias comienzan con un pulso de inversión de 180º, se espera un tiempo denominado tiempo de inversión (TI), y se envía un pulso de 90º de excitación para posteriormente recoger la señal. Ese pulso de 180º tiene como función potenciar la señal obtenida y permite anular la voluntad de algunos tejidos aumentando el contraste.
+
+Generalmente la señal de los tejidos que se anulan son los del agua y la grasa. Si anulamos la señal de la grasa tenemos la secuencia STIR. Si por el contrario, la señal que anulamos es la del agua tenemos una secuencia FLAIR.
+<footer>
+	<center><h6>RMN Practica - Todos los derechos reservados</h6></center>
+</footer>
+</body>
+</html>
